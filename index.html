@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>4-in-1 Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <style>
+    .calc-box {
+      border: 2px solid #6c757d;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 10px 0;
+      background-color: #f8f9fa;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      height: 100%;
+    }
+  </style>
+</head>
+    <body>
+        <div class="container py-4">
+            <h2 class="text-center mb-4">BASIC 4-in-1 CALCULATOR</h2>
+            <div class="row g-4 pb-5">
+                <!-- Addition -->
+                <div class="col-md-6">
+                    <div class="calc-box">
+                    <h4>Addition</h4>
+                    <input type="number" id="add1" class="form-control mb-2" placeholder="Enter first number">
+                    <input type="number" id="add2" class="form-control mb-2" placeholder="Enter second number">
+                    <button class="btn btn-primary mb-2 mt-2" onclick="doAddition()">Add</button>
+                    <p class="fw-bold">Result: <span id="addResult"></span></p>
+                    </div>
+                </div>
+
+                <!-- Subtraction -->
+                <div class="col-md-6">
+                    <div class="calc-box">
+                    <h4>Subtraction</h4>
+                    <input type="number" id="sub1" class="form-control mb-2" placeholder="Enter first number">
+                    <input type="number" id="sub2" class="form-control mb-2" placeholder="Enter second number">
+                    <button class="btn btn-danger mb-2 mt-2" onclick="doSubtraction()">Subtract</button>
+                    <p class="fw-bold">Result: <span id="subResult"></span></p>
+                    </div>
+                </div>
+
+                <!-- Multiplication -->
+                <div class="col-md-6">
+                    <div class="calc-box">
+                    <h4>Multiplication</h4>
+                    <input type="number" id="mul1" class="form-control mb-2" placeholder="Enter first number">
+                    <input type="number" id="mul2" class="form-control mb-2" placeholder="Enter second number">
+                    <button class="btn btn-success mb-2 mt-2" onclick="doMultiplication()">Multiply</button>
+                    <p class="fw-bold">Result: <span id="mulResult"></span></p>
+                    </div>
+                </div>
+
+                <!-- Division -->
+                <div class="col-md-6">
+                    <div class="calc-box">
+                    <h4>Division</h4>
+                    <input type="number" id="div1" class="form-control mb-2" placeholder="Enter first number">
+                    <input type="number" id="div2" class="form-control mb-2" placeholder="Enter second number">
+                    <button class="btn btn-warning mb-2 mt-2" onclick="doDivision()">Divide</button>
+                    <p class="fw-bold">Result: <span id="divResult"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="main.js"></script>
+
+    </body>
+</html>
